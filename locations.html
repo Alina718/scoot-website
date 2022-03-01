@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts/main.js"></script>
+  <title>Frontend Mentor | Scoot</title>
+</head>
+<body>
+  <header class="header block">
+    <div class="header-container header-container--desktop container">
+      <a href="index.html"><img src="assets/logo.svg" alt="logo"></a>
+      <div class="desktop-menu">
+        <nav>
+          <ul class="nav-list--desktop">
+            <li><a class="nav-link header-link fs-200" href="about.html">About</a></li>
+            <li><a class="nav-link header-link fs-200" href="locations.html">Location</a></li>
+            <li><a class="nav-link header-link fs-200" href="careers.html">Careers</a></li>
+          </ul>
+        </nav>
+      <a data-goto=".sign-up" class="button header-button fs-200" href="#">Get Scootin</a>
+    </div>
+    </div>
+    <div class="header-container header-container--mobile container">
+     <button class="hamburger-menu" id="menu-btn"></button>
+     <a class="homepage-link" href="index.html"><img class="logo" src="assets/logo.svg" alt="logo"></a>
+    <div id="overlay" class="overlay" data-visible="false"></div>
+     <div id="mobile-navigation" class="mobile-menu"  data-visible="false">
+      <nav>
+        <ul class="nav-list--mobile" data-visible="false">
+          <li><a class="header-link fs-300" href="about.html">About</a></li>
+          <li><a class="header-link fs-300" href="locations.html">Location</a></li>
+          <li><a class="header-link fs-300" href="careers.html">Careers</a></li>
+        </ul>
+      </nav>
+      <a data-goto=".sign-up" id="button-mobile" class="button button-mobile fs-200" href="#">Get Scootin</a>
+    </div>
+  </div>
+</header>
+<section class="hero-pages hero-pages-bg hero-bg">
+  <div class="container">
+    <h1 class="hero-pages-title fs-900 letter-spacing-h1">Locations</h1>
+  </div>
+  <svg class="white-circles--pages" xmlns="http://www.w3.org/2000/svg" width="234" height="63">
+    <g fill="none" fill-rule="evenodd"><circle cx="31" cy="31.5" r="29.5" stroke="#FFF" stroke-width="3"/>
+      <circle cx="117" cy="31.5" r="29.5" stroke="#FFF" stroke-width="3"/>
+      <circle cx="203" cy="31.5" r="31" fill="#FFF"/></g>
+  </svg>
+</section>
+<section>
+  <div class="locations-container locations-container--mobile container">
+    <div class="map">
+      <img src="assets/images/world-map-mobile.png" alt="world-map">
+    </div>
+    <ul class="cities-list">
+      <li>New York</li>
+      <li>London</li>
+      <li>Yokohama</li>
+      <li>Jakarta</li>
+    </ul>
+  </div>
+
+  <div class="locations-container locations-container--desktop">
+    <picture>
+      <source media="(min-width: 70em )" srcset="assets/images/world-map-desktop.png">
+      <source media="(min-width: 47.5em)" srcset="assets/images/world-map-tablet.png">
+      <img src="assets/images/world-map-desktop.png" alt="world map">
+    </picture>
+    <span class="city-pin city-pin--ny">New York</span>
+    <span class="city-pin city-pin--london">London</span>
+    <span class="city-pin city-pin--yokohama">Yokohama</span>
+    <span class="city-pin city-pin--jakarta">Jakarta</span>
+  </div>
+</section>
+<div class="other-cities container flex-container text-align">
+  <h2 class="other-cities-title fs-800 letter-spasing-h2">Your city <span>not listed?</span></h2>
+  <p class="fs-200">If you’d like to see Scoot in your hometown, be sure to let us know. We track 
+    requests and plan launches based on demand. Feel free to message us by clicking 
+    the link or messaging us on social.</p>
+  <button class="button">Message Us</button>
+</div>
+<section class="sign-up">
+  <div class="container flex-container sign-up-container">
+    <h2 class="sign-up-title fs-800 letter-spasing-h2">Sign up and <span> Scoot off today</span></h2>
+    <div class="app-links">
+      <a href="#"><img class="app-store-link" src="assets/icons/app-store.svg" alt="app store"></a>
+      <a href="#"><img class="google-play-link" src="assets/icons/google-play.svg" alt="google play"></a>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <div class="container footer-container">
+    <a href="index.html"><img class="footer-logo" src="assets/logo.svg" alt="logo"></a>
+    <ul>
+      <ul class="footer-links">
+        <li><a class="nav-link footer-link fs-200" href="about.html">About</a></li>
+        <li><a class="nav-link footer-link fs-200" href="locations.html">Location</a></li>
+        <li><a class="nav-link footer-link fs-200" href="careers.html">Careers</a></li>
+      </ul>
+    </ul>
+    <ul class="socials-links">
+      <li><a class="social-link" href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a></li>
+      <li><a class="social-link" href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a></li>
+      <li><a class="social-link" href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a></li>
+    </ul>
+  </div>
+</section>
+
+
+
+<!--
+  Locations
+
+
+
+  
+  London
+  
+  
+
+  
+
+  
+
+  
+-->
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/faqs.js"></script>
+  <title>Frontend Mentor | Scoot About</title>
+</head>
+<body>
+  <header class="header block">
+    <div class="header-container header-container--desktop container">
+      <a href="index.html"><img src="assets/logo.svg" alt="logo"></a>
+      <div class="desktop-menu">
+        <nav>
+          <ul class="nav-list--desktop">
+            <li><a class="nav-link header-link fs-200" href="about.html">About</a></li>
+            <li><a class="nav-link header-link fs-200" href="locations.html">Location</a></li>
+            <li><a class="nav-link header-link fs-200" href="careers.html">Careers</a></li>
+          </ul>
+        </nav>
+      <a data-goto=".sign-up" class="button header-button fs-200" href="#">Get Scootin</a>
+    </div>
+    </div>
+    <div class="header-container header-container--mobile container">
+     <button class="hamburger-menu" id="menu-btn"></button>
+     <a class="homepage-link" href="index.html"><img class="logo" src="assets/logo.svg" alt="logo"></a>
+    <div id="overlay" class="overlay" data-visible="false"></div>
+     <div id="mobile-navigation" class="mobile-menu"  data-visible="false">
+      <nav>
+        <ul class="nav-list--mobile" data-visible="false">
+          <li><a class="header-link fs-300" href="about.html">About</a></li>
+          <li><a class="header-link fs-300" href="locations.html">Location</a></li>
+          <li><a class="header-link fs-300" href="careers.html">Careers</a></li>
+        </ul>
+      </nav>
+      <a data-goto=".sign-up" id="button-mobile" class="button button-mobile fs-200" href="#">Get Scootin</a>
+    </div>
+  </div>
+  </header>
+  <section class="hero-pages hero-about hero-bg">
+    <div class="container">
+      <h1 class="hero-pages-title fs-900 letter-spacing-h1">About</h1>
+    </div>
+    <svg class="white-circles--pages" xmlns="http://www.w3.org/2000/svg" width="234" height="63">
+      <g fill="none" fill-rule="evenodd"><circle cx="31" cy="31.5" r="29.5" stroke="#FFF" stroke-width="3"/>
+        <circle cx="117" cy="31.5" r="29.5" stroke="#FFF" stroke-width="3"/>
+        <circle cx="203" cy="31.5" r="31" fill="#FFF"/></g>
+    </svg>
+  </section>
+  <section>
+    <div class="feature feature-pages container">
+      <div class="feature-item flex-container">
+        <div class="feature-item--img feature-item--img-right">
+          <img src="assets/images/digital-era.jpg" alt="A girl with a phone" class="round-img--big">
+          <svg class="arrow arrow--left-downward" xmlns="http://www.w3.org/2000/svg" width="741" height="151">
+            <g fill="none" fill-rule="evenodd" stroke="#FCB72B" stroke-linejoin="bevel" stroke-width="15">
+              <path d="M740.969 143.368H182.854V43.999H6.591"/>
+              <path d="M44.64 82.64L6.214 44.214 44.64 5.787"/>
+            </g>
+          </svg>
+        </div>
+        <div class="feature-item--body item-body--left flex-item text-align">
+          <h2 class="fs-800 letter-spasing-h2">Mobility for the digital era</h2>
+          <p class="fs-200">Getting around should be simple (and even fun!) for everyone. We embrace technology to 
+            provide low cost, smart access to scooters at your fingertips.</p>
+          <a class="button fs-200" href="#">Learn More</a>
+        </div>
+      </div>
+      <div class="feature-item flex-container">
+        <div class="feature-item--img feature-item--img-left">
+          <img src="assets/images/better-living.jpg" alt="City street" class="round-img--big">
+          <svg class="arrow arrow-top--right" xmlns="http://www.w3.org/2000/svg" width="741" height="151">
+            <g fill="none" fill-rule="evenodd" stroke="#FCB72B" stroke-linejoin="bevel" stroke-width="15">
+              <path d="M740.969 8H182.854v99.369H6.591"/>
+              <path d="M44.64 145.64L6.214 107.214 44.64 68.787"/>
+            </g>
+          </svg>
+        </div>
+        <div class="feature-item--body flex-item text-align">
+          <h2 class="fs-800 letter-spasing-h2">Better urban living</h2>
+          <p class="fs-200">We’re helping connect cities and bring people closer together. Our scooters are also 
+            fully-electric and we offset the minimal carbon footprint for each ride.</p>
+          <a class="button fs-200" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="values">
+    <div class="container">
+      <h2 class="values-title fs-800 letter-spasing-h2">Our values</h2>
+      <div class="values-container flex-container">
+      <div class="values-item">
+        <div>
+          <img src="assets/images/our-tech.jpg" alt="mobile phone" class="round-img--small">
+          <span class="yellow-circle fs-600">01</span>
+        </div>
+        <h3 class="values-item-title fs-600">Our tech</h3>
+        <p class="values-item-text fs-200">We’re using cutting edge technology to drive accessible urban transportation forward. 
+          Our fully electric scooters are a joy to ride!</p>
+      </div>
+      <div class="values-item">
+        <div>
+          <img src="assets/images/our-integrity.jpg" alt="" class="round-img--small">
+          <span class="yellow-circle fs-600">02</span>
+        </div>
+        <h3 class="values-item-title fs-600">Our integrity</h3>
+        <p class="values-item-text fs-200">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience 
+          in every city we serve.</p>
+      </div>
+      <div class="values-item">
+        <div>
+          <img src="assets/images/our-community.jpg" alt="" class="round-img--small">
+          <span class="yellow-circle fs-600">03</span>
+        </div>
+        <h3 class="values-item-title fs-600">Our community</h3>
+        <p class="values-item-text fs-200">We support every community we serve. All workers are paid a living wage based on their 
+          location and are Scoot employees.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="faqs">
+    <div class="container">
+      <h2 class="faqs-title fs-800 letter-spasing-h2">FAQs</h2>
+      <div class="faqs-item flex-container">
+        <h3 class="faqs-item-title fs-700 letter-spacing-h3">How it works</h3>
+        <div>
+        <div class="faqs-item-body">
+          <button class="faqs-toggle fs-400">
+            How do I download the app?
+            <img class="arrow-icon" src="assets/icons/chevron.svg" alt="chevron">
+          </button>
+          <div class="faqs-item-content">
+            <p class="fs-200">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. 
+              An even simpler way to do it would be to click the relevant link at the bottom of this 
+              page and you’ll be re-directed to the correct page.</p>
+            </div>
+          </div>
+          <div class="faqs-item-body">
+            <button class="faqs-toggle fs-400">
+              Can I find a nearby Scoots?
+              <img class="arrow-icon" src="assets/icons/chevron.svg" alt="chevron">
+            </button>
+            <div class="faqs-item-content">
+              <p class="fs-200">Definitely! Simply open up the app and allow us to find your location while using it. We'll 
+                show you all of the closest Scoots and some extra useful information.</p>
+              </div>
+          </div>
+          <div class="faqs-item-body">
+            <button class="faqs-toggle fs-400">
+              Do I need a license to ride?
+              <img class="arrow-icon" src="assets/icons/chevron.svg" alt="chevron">
+            </button>
+            <div class="faqs-item-content">
+              <p class="fs-200">Yup! We provide information inside the app regarding local laws and the license you need to be 
+                able to ride our Scoots.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+        <div class="faqs-item flex-container">
+          <h3 class="faqs-item-title fs-700 letter-spacing-h3">Safe driving</h3>
+          <div>
+           <div class="faqs-item-body">
+             <button class="faqs-toggle fs-400">
+              Should I wear a helmet?
+               <img class="arrow-icon" src="assets/icons/chevron.svg" alt="chevron">
+             </button>
+             <div class="faqs-item-content">
+               <p class="fs-200">Yes, please do! All cities have different laws. But we strongly strongly strongly recommend 
+                always wearing a helmet regardless of the local laws. We like you and we want you to be as 
+                safe as possible while Scooting.</p>
+              </div>
+            </div>
+            <div class="faqs-item-body">
+              <button class="faqs-toggle fs-400">
+                How about the rules & regulations?
+                <img class="arrow-icon" src="assets/icons/chevron.svg" alt="chevron">
+              </button>
+              <div class="faqs-item-content">
+                <p class="fs-200">Now is not the time to be a rule breaker. Be sure you're complying with all local laws and 
+                  regulations. Also, just be a good human being. Be sure not to park your Scoot where it can 
+                  block access to buildings or get in people's way.</p>
+                </div>
+            </div>
+            <div class="faqs-item-body">
+              <button class="faqs-toggle fs-400">
+                What if I damage my Scoot?
+                <img class="arrow-icon" src="assets/icons/chevron.svg" alt="chevron">
+              </button>
+              <div class="faqs-item-content">
+                <p class="fs-200">Be sure to read our terms and conditions carefully. Not the most fun job we know but we make 
+                  it as clear as possible. There's an option to add insurance for each trip, or you can sign 
+                  up for annual insurance if you're a regular Scooter.</p>
+                </div>
+            </div>
+          </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="sign-up">
+    <div class="container flex-container sign-up-container">
+      <h2 class="sign-up-title fs-800 letter-spasing-h2">Sign up and <span> Scoot off today</span></h2>
+      <div class="app-links">
+        <a href="#"><img class="app-store-link" src="assets/icons/app-store.svg" alt="app store"></a>
+        <a href="#"><img class="google-play-link" src="assets/icons/google-play.svg" alt="google play"></a>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="container footer-container">
+      <a href="index.html"><img class="footer-logo" src="assets/logo.svg" alt="logo"></a>
+      <ul>
+        <ul class="footer-links">
+          <li><a class="nav-link footer-link fs-200" href="about.html">About</a></li>
+          <li><a class="nav-link footer-link fs-200" href="locations.html">Location</a></li>
+          <li><a class="nav-link footer-link fs-200" href="careers.html">Careers</a></li>
+        </ul>
+      </ul>
+      <ul class="socials-links">
+        <li><a class="social-link" href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a></li>
+        <li><a class="social-link" href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a></li>
+        <li><a class="social-link" href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a></li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>
